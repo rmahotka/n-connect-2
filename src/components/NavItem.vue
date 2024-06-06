@@ -19,33 +19,7 @@
             <router-link class="nav-link" to="/sponsors">Sponsors</router-link>
           </li>
           <li>
-            <Menu as="div" class="relative inline-block text-left">
-              <MenuButton class="flex gap-2 items-center"
-                >Pages <i class="fa fa-chevron-down"
-              /></MenuButton>
-              <transition
-                enter-active-class="transition duration-100 ease-out"
-                enter-from-class="transform scale-95 opacity-0"
-                enter-to-class="transform scale-100 opacity-100"
-                leave-active-class="transition duration-75 ease-in"
-                leave-from-class="transform scale-100 opacity-100"
-                leave-to-class="transform scale-95 opacity-0"
-              >
-                <MenuItems
-                  class="absolute flex flex-col p-3 right-0 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black/5 focus:outline-none"
-                >
-                  <MenuItem
-                    v-for="link of links"
-                    :key="link.href"
-                    as="template"
-                  >
-                    <router-link class="dropdown-item" :to="link.href">
-                      {{ link.label }}
-                    </router-link>
-                  </MenuItem>
-                </MenuItems>
-              </transition>
-            </Menu>
+            <DropDownMenu :links="links" />
           </li>
           <li>
             <router-link class="nav-link" to="/contact">Contact</router-link>
@@ -67,9 +41,7 @@
 
 <script setup>
 import { ref } from 'vue';
-
-import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue';
-
+import DropDownMenu from './DropDownMenu.vue';
 const links = [
   { href: '/about', label: 'About' },
   { href: '/accommodation', label: 'Accommodation' },
