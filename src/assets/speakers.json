@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "name": "Sophia Tailor",
+      "image": "/speakers/1.jpg",
+      "description": "The way of Learning Design is all about the way you look on anything you see, or how you do imagine about something in your dream, also you need to be creative.",
+      "role": "Designer",
+      "company": "Google",
+      "companyUrl": "https://google.com",
+      "social": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://x.com",
+        "instagram": "https://instagram.com"
+      },
+      "modalContent": "Sophia Tailor is a designer at Google with a passion for creating innovative solutions. Her work focuses on user-centered design and creative problem-solving.",
+      "featured": false
+    },
+    {
+      "id": 2,
+      "name": "John Doe",
+      "image": "/speakers/2.jpg",
+      "description": "John is a seasoned speaker with over a decade of experience in technology and innovation.",
+      "role": "Engineer",
+      "company": "Apple",
+      "companyUrl": "https://apple.com",
+      "social": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://x.com",
+        "instagram": "https://instagram.com"
+      },
+      "modalContent": "John Doe has been at the forefront of technological advancements at Apple. His expertise includes software engineering and product development.",
+      "featured": false
+    },
+    {
+      "id": 3,
+      "name": "Ethan Taylor",
+      "image": "/speakers/featured/1.jpg",
+      "description": "The way of Learning Design is all about the way you look on anything you see, or how you do imagine about something in your dream, also you need to be creative.",
+      "role": "Event Organizer",
+      "company": "Company ABC",
+      "companyUrl": "https://companyabc.com",
+      "social": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://x.com",
+        "dribbble": "https://dribbble.com"
+      },
+      "modalContent": "Ethan Taylor is an experienced event organizer known for his innovative approaches in planning and executing events.",
+      "featured": true
+    },
+    {
+      "id": 4,
+      "name": "Thomas Kelly",
+      "image": "/speakers/featured/2.jpg",
+      "description": "The way of Learning Design is all about the way you look on anything you see, or how you do imagine about something in your dream, also you need to be creative.",
+      "role": "Title Sponsor",
+      "company": "Company XYZ",
+      "companyUrl": "https://companyxyz.com",
+      "social": {
+        "facebook": "https://facebook.com",
+        "twitter": "https://x.com",
+        "dribbble": "https://dribbble.com"
+      },
+      "modalContent": "Thomas Kelly is the title sponsor and has been instrumental in supporting various initiatives through his company.",
+      "featured": true
+    }
+  ]
+  

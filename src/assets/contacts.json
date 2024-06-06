@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Ruby Martin",
+      "role": "Organizer",
+      "image": "/contact/cp1.jpg",
+      "phone": "+02 596 355 32",
+      "email": "ruby@evemate.com"
+    },
+    {
+      "id": 2,
+      "name": "Ella Robinson",
+      "role": "Planner",
+      "image": "/contact/cp2.jpg",
+      "phone": "+02 596 355 32",
+      "email": "ella@evemate.com"
+    }
+  ]
+  

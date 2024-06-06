@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "time": "09:00 - 10:30",
+    "image": "/schedule/1.jpg",
+    "description": "Material Design is a new Design language invented by Google & it's going to rule the design industry for the next few years. Every designer should have at least some knowledge about material design.",
+    "speaker": {
+      "name": "Zarina Kame",
+      "role": "Designer",
+      "company": "Google",
+      "companyUrl": "https://google.com"
+    }
+  },
+  {
+    "id": 2,
+    "time": "09:00 - 10:30",
+    "image": "/schedule/1.jpg",
+    "description": "Introduction to React and its ecosystem. Understanding the basics and advanced concepts of React.",
+    "speaker": {
+      "name": "John Doe",
+      "role": "Software Engineer",
+      "company": "Facebook",
+      "companyUrl": "https://facebook.com"
+    }
+  },
+  {
+    "id": 3,
+    "time": "11:00 - 12:30",
+    "image": "/schedule/1.jpg",
+    "description": "Introduction to Vue.js and its ecosystem. Understanding the basics and advanced concepts of Vue.js.",
+    "speaker": {
+      "name": "Jane Doe",
+      "role": "Frontend Developer",
+      "company": "GitHub",
+      "companyUrl": "https://github.com"
+    }
+  }
+]
