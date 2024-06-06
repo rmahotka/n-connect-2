@@ -1,72 +1,38 @@
 <template>
-  <div class="testimonials-area image-bg">
-    <div class="overlay">
-      <div class="container">
-        <div class="sub-heading">
-          <div class="row">
-            <div class="col-md-12">
-              <h4>Testimonials</h4>
-            </div>
-          </div>
+  <div class="image-bg text-white">
+    <div class="overlay py-12">
+      <div class="container mx-auto">
+        <div>
+          <h4 class="text-4xl font-semibold">Testimonials</h4>
         </div>
         <div class="row">
-          <div class="col-md-12">
-            <div
-              id="testimonials"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div
+          <div id="testimonials">
+            <div class="flex gap-5">
+              <carousel :items-to-show="1">
+                <Slide
                   v-for="(testimonial, index) in testimonials"
                   :key="index"
-                  :class="['carousel-item', { active: index === 0 }]"
                 >
-                  <div class="single-testimonial">
-                    <div class="row">
-                      <div class="col-sm-1"></div>
-                      <div class="col-sm-6 mb-30">
-                        <blockquote>{{ testimonial.quote }}</blockquote>
-                        <ul class="customer-rating">
-                          <li v-for="star in testimonial.rating" :key="star">
-                            <i class="fa fa-star"></i>
-                          </li>
-                        </ul>
-                        <h4>{{ testimonial.name }}</h4>
-                      </div>
-                      <div class="col-sm-3">
-                        <div class="client-image primary-shadow">
-                          <img :src="testimonial.image" alt="client" />
-                        </div>
-                      </div>
+                  <div>
+                    <div class="flex flex-col mt-5">
+                      <h4 class="text-xl font-bold">{{ testimonial.name }}</h4>
+                      <p class="text-white mb-0">{{ testimonial.quote }}</p>
+                      <ul class="flex justify-center gap-1">
+                        <li v-for="star in testimonial.rating" :key="star">
+                          <i class="fa fa-star"></i>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="flex justify-center">
+                      <img :src="testimonial.image" alt="client" />
                     </div>
                   </div>
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#testimonials"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#testimonials"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                </Slide>
+                <template #addons>
+                  <navigation />
+                  <pagination />
+                </template>
+              </carousel>
             </div>
           </div>
         </div>
@@ -75,16 +41,12 @@
   </div>
 </template>
 
-<script>
-import testimonialsData from '../assets/testimonials.json';
+<script setup>
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
+import "vue3-carousel/dist/carousel.css";
+import testimonialsData from "../assets/testimonials.json";
+
+const testimonials = testimonialsData;
 </script>
 
-<style scoped>
-.testimonials-area {
-  position: relative;
-  padding: 50px 0;
-}
-.carousel-item {
-  transition: transform 0.6s ease;
-}
-</style>
+<style scoped></style>

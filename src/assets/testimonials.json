@@ -1,15 +1,14 @@
 [
-    {
-      "quote": "This is the best event i had ever joined. Most exiting this is speakers are so exprienced & helpfull. Also the decoretion was also very good. In one word 'Just Awesome'",
-      "rating": 5,
-      "name": "Deazel Kameru",
-      "image": "/testimonial/1.jpg"
-    },
-    {
-      "quote": "Another amazing testimonial. The speakers were incredibly knowledgeable and helpful.",
-      "rating": 5,
-      "name": "Jane Doe",
-      "image": "/testimonial/1.jpg"
-    }
-  ]
-  
+  {
+    "quote": "This is the best event i had ever joined. Most exiting this is speakers are so exprienced & helpfull. Also the decoretion was also very good. In one word 'Just Awesome'",
+    "rating": 5,
+    "name": "Deazel Kameru",
+    "image": "/testimonial/1.jpg"
+  },
+  {
+    "quote": "Another amazing testimonial. The speakers were incredibly knowledgeable and helpful.",
+    "rating": 5,
+    "name": "Jane Doe",
+    "image": "/testimonial/1.jpg"
+  }
+]
