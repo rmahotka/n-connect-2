@@ -3,7 +3,9 @@
     <div class="overlay py-12">
       <div class="container mx-auto">
         <div>
-          <h4 class="text-4xl font-semibold">Testimonials</h4>
+          <h4 class="text-4xl font-semibold text-center 2xl:text-left">
+            Testimonials
+          </h4>
         </div>
         <div class="row">
           <div id="testimonials">
@@ -42,9 +44,9 @@
 </template>
 
 <script setup>
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
-import "vue3-carousel/dist/carousel.css";
-import testimonialsData from "../assets/testimonials.json";
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel';
+import 'vue3-carousel/dist/carousel.css';
+import testimonialsData from '../assets/testimonials.json';
 
 const testimonials = testimonialsData;
 </script>

@@ -2,9 +2,11 @@
   <div class="mb-20">
     <div class="container mx-auto">
       <div class="sub-heading">
-        <h4 class="font-bold text-4xl">Featured SPEAKERS</h4>
+        <h4 class="font-bold text-4xl text-center xl:text-left">
+          Featured SPEAKERS
+        </h4>
       </div>
-      <div class="flex gap-4">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         <FeaturedSpeakerComponent
           v-for="speaker in featuredSpeakers"
           :key="speaker.id"
@@ -15,7 +17,9 @@
 
     <div class="container mx-auto">
       <div class="sub-heading">
-        <h4 class="font-bold text-4xl">Other Speakers</h4>
+        <h4 class="font-bold text-4xl text-center xl:text-left">
+          Other Speakers
+        </h4>
       </div>
       <div class="flex justify-center flex-wrap gap-4">
         <OtherSpeakersComponent
@@ -29,12 +33,12 @@
 </template>
 
 <script>
-import FeaturedSpeakerComponent from "../components/FeaturedSpeakerComponent.vue";
-import OtherSpeakersComponent from "../components/OtherSpeakersComponent.vue";
-import speakersData from "../assets/speakers.json";
+import FeaturedSpeakerComponent from '../components/FeaturedSpeakerComponent.vue';
+import OtherSpeakersComponent from '../components/OtherSpeakersComponent.vue';
+import speakersData from '../assets/speakers.json';
 
 export default {
-  name: "Speakers",
+  name: 'Speakers',
   components: {
     FeaturedSpeakerComponent,
     OtherSpeakersComponent,

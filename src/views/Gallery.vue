@@ -3,8 +3,12 @@
     <div class="sub-heading">
       <h4 class="font-bold text-2xl">Featured Gallery</h4>
     </div>
-    <div class="flex gap-4">
-      <GalleryItem v-for="imgInfo in imgInfo" :key="index" :imgInfo="imgInfo" />
+    <div class="grid gap-4 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+      <GalleryItem
+        v-for="(imgInfo, index) in imgInfo"
+        :key="index"
+        :imgInfo="imgInfo"
+      />
     </div>
   </div>
 
@@ -16,8 +20,12 @@
         </div>
       </div>
     </div>
-    <div class="flex gap-4">
-      <GalleryItem v-for="imgInfo in imgInfo" :key="index" :imgInfo="imgInfo" />
+    <div class="grid gap-4 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
+      <GalleryItem
+        v-for="(imgInfo, index) in imgInfo"
+        :key="index"
+        :imgInfo="imgInfo"
+      />
     </div>
   </div>
 
@@ -26,7 +34,7 @@
       <div class="sub-heading">
         <h4 class="font-bold text-2xl">Previous Event videos</h4>
       </div>
-      <div class="flex">
+      <div class="grid gap-4 xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1">
         <div v-for="id in videoObj" :key="id" class="single-gallery shadow">
           <div data-type="youtube" :data-video-id="id"></div>
         </div>
@@ -35,32 +43,32 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue";
-import GalleryItem from "@/components/GalleryItem.vue";
+import { ref } from 'vue';
+import GalleryItem from '@/components/GalleryItem.vue';
 
 const videoObj = ref([
-  "nrJtHemSPW4",
-  "4Wkr0eXiUNw",
-  "keDneypw3HY",
-  "k6Kly58LYzY",
+  'nrJtHemSPW4',
+  '4Wkr0eXiUNw',
+  'keDneypw3HY',
+  'k6Kly58LYzY',
 ]);
 
 const imgInfo = ref([
   {
-    imgSrc: "/gallery/1.jpg",
-    link: "images/gallery/large.jpg",
+    imgSrc: '/gallery/1.jpg',
+    link: 'images/gallery/large.jpg',
   },
   {
-    imgSrc: "/gallery/1.jpg",
-    link: "images/gallery/large.jpg",
+    imgSrc: '/gallery/1.jpg',
+    link: 'images/gallery/large.jpg',
   },
   {
-    imgSrc: "/gallery/1.jpg",
-    link: "images/gallery/large.jpg",
+    imgSrc: '/gallery/1.jpg',
+    link: 'images/gallery/large.jpg',
   },
   {
-    imgSrc: "/gallery/1.jpg",
-    link: "images/gallery/large.jpg",
+    imgSrc: '/gallery/1.jpg',
+    link: 'images/gallery/large.jpg',
   },
 ]);
 </script>

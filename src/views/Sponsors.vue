@@ -8,7 +8,7 @@
           role="tabpanel"
           aria-labelledby="silverSponsors-tab"
         >
-          <div class="flex flex-wrap gap-5">
+          <div class="grid 2xl:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5">
             <SponsorComponent
               v-for="sponsor in sponsors"
               :key="sponsor.id"
@@ -22,7 +22,7 @@
 </template>
 
 <script setup>
-import SponsorComponent from "@/components/SponsorComponent.vue";
-import sponsorsData from "@/assets/sponsor.json";
+import SponsorComponent from '@/components/SponsorComponent.vue';
+import sponsorsData from '@/assets/sponsor.json';
 const sponsors = sponsorsData;
 </script>

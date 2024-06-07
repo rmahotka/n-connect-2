@@ -45,11 +45,11 @@
 </template>
 
 <script>
-import ScheduleItemComponent from "../components/ScheduleItemComponent.vue";
-import schedulesData from "../assets/schedules.json";
+import ScheduleItemComponent from '../components/ScheduleItemComponent.vue';
+import schedulesData from '../assets/schedules.json';
 
 export default {
-  name: "ScheduleAreaComponent",
+  name: 'ScheduleAreaComponent',
   components: {
     ScheduleItemComponent,
   },
@@ -72,6 +72,4 @@ export default {
 };
 </script>
 
-<style scoped>
-/* Add your styles here if necessary */
-</style>
+<style scoped></style>

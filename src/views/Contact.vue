@@ -1,14 +1,16 @@
 <template>
   <div class="contact-area bg-light">
     <div class="container mx-auto">
-      <div class="flex">
+      <div class="flex flex-wrap flex-col md:flex-row">
         <LocationAndContactItem :contacts="contacts" />
       </div>
       <div class="block">
         <div class="contact-form shadow bg-white">
-          <h4 class="font-bold text-2xl">Drop Us A Line</h4>
+          <h4 class="font-bold text-2xl text-center lg:text-left">
+            Drop Us A Line
+          </h4>
           <form action="action.php">
-            <div class="flex justify-between gap-6">
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-6">
               <div class="flex flex-col-reverse w-full">
                 <input
                   class="border-2 border-gray-500 rounded-lg p-2"
@@ -54,7 +56,7 @@
             <div class="row">
               <button
                 type="submit"
-                class="mt-2 border-2 font-bold bg-black border-black rounded-lg py-2 px-8 text-white transition-all hover:bg-inherit hover:text-black"
+                class="mt-2 border-2 font-bold bg-black border-black rounded-lg py-2 px-8 text-white transition-all hover:bg-inherit hover:text-black lg:w-56 w-full"
               >
                 Submit
               </button>
@@ -67,9 +69,9 @@
 </template>
 
 <script setup>
-import LocationAndContactItem from "@/components/LocationAndContactItem.vue";
+import LocationAndContactItem from '@/components/LocationAndContactItem.vue';
 
-import contactsData from "../assets/contacts.json";
+import contactsData from '../assets/contacts.json';
 
 const contacts = contactsData;
 </script>

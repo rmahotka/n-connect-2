@@ -2,7 +2,7 @@
   <div>
     <div class="overlay pb-12">
       <div class="container mx-auto">
-        <div class="flex flex-wrap justify-between">
+        <div class="flex flex-wrap lg:justify-between justify-center gap-8">
           <div>
             <h2 class="font-bold text-6xl text-white">404 Error</h2>
             <p class="text-black font-bold text-2xl mb-4">Page Not Found</p>

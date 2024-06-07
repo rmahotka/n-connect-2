@@ -1,8 +1,8 @@
 <template>
   <div class="about-area" id="about">
     <div class="container mx-auto">
-      <div class="flex items-center justify-between gap-8">
-        <div class="video-intro shadow w-1/2">
+      <div class="grid 2xl:grid-cols-2 md:grid-cols-1 gap-8">
+        <div class="video-intro shadow">
           <img
             src="/about/video-intro.jpg"
             alt="video-intro"
@@ -15,9 +15,11 @@
             <i class="fa fa-play"></i>
           </a>
         </div>
-        <div class="col-md-6 w-1/2">
+        <div>
           <div class="about-text">
-            <h4 class="text-4xl font-semibold">About The Event</h4>
+            <h4 class="text-4xl font-semibold text-center 2xl:text-left">
+              About The Event
+            </h4>
             <p class="text-xl mt-3">
               This event is exclusively for those who want to learn about
               material design principles introduced by Google. If you are a

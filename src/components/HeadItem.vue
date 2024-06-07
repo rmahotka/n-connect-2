@@ -1,12 +1,12 @@
 <template>
   <div class="top-info-bar">
     <div class="container mx-auto py-2">
-      <div class="flex justify-between items-center">
+      <div class="flex justify-between items-center md:flex-row flex-col">
         <div>
           <i class="fas fa-map-marker-alt"></i> 49 West 32nd Street, New York
         </div>
         <div>
-          <ul>
+          <ul class="text-center md:text-left">
             <li><i class="fas fa-phone"></i> +02 525 486 232</li>
             <li><i class="fas fa-envelope"></i> eelias.cse@gmail.com</li>
           </ul>

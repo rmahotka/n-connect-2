@@ -1,5 +1,5 @@
 <template>
-  <div class="location-card shadow w-3/5">
+  <div class="location-card shadow lg:w-3/5 w-full">
     <img src="/contact/location.jpg" alt="location" />
     <div class="overlay"></div>
     <div class="location-info">
@@ -14,9 +14,11 @@
       <span class="map-close"><i class="fa fa-close"></i></span>
     </div>
   </div>
-  <div class="w-2/5">
+  <div class="lg:w-2/5 w-full">
     <div class="p-12 shadow bg-white h-full">
-      <h4 class="font-bold text-2xl text-black mb-8">Contact Info</h4>
+      <h4 class="font-bold text-2xl text-black mb-8 text-center lg:text-left">
+        Contact Info
+      </h4>
       <div class="flex justify-center gap-7">
         <ContactItemComponent
           v-for="contact in contacts"
@@ -29,7 +31,7 @@
 </template>
 
 <script setup>
-import ContactItemComponent from "@/components/ContactItemComponent.vue";
+import ContactItemComponent from '@/components/ContactItemComponent.vue';
 
 const props = defineProps({
   contacts: {
